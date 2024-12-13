@@ -118,8 +118,6 @@ export function FunctionChain() {
               onEquationChange={(id, equation) =>
                 onEquationChange(id, equation)
               }
-              input={initialValue}
-              output={results[functionsData.length - 1]}
               onInputChange={setInitialValue}
             />
           ))}
