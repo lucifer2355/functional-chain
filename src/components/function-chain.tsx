@@ -1,4 +1,4 @@
-import { useEffect, useState, useMemo, useCallback } from "react";
+import { useState, useMemo, useCallback } from "react";
 import { FunctionCard } from "./function-card";
 import { functionsData } from "../data/functions-data";
 import { FunctionData } from "../types/function-data";

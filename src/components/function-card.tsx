@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState, useMemo } from "react";
+import { useCallback, useState, useMemo } from "react";
 import { Card } from "./UI/card";
 import { Input } from "./UI/input";
 import { Label } from "./UI/label";
@@ -10,8 +10,6 @@ interface FunctionCardProps {
   id: number;
   equation: string;
   svgPath: string;
-  input?: number;
-  output?: number;
   onEquationChange: (id: number, equation: string) => void;
   onInputChange: (input: number) => void;
 }
@@ -20,8 +18,6 @@ export function FunctionCard({
   id,
   equation,
   svgPath,
-  input,
-  output,
   onEquationChange,
 }: FunctionCardProps) {
   const [equationValue, setEquationValue] = useState<string>(equation);
