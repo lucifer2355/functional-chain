@@ -32,7 +32,10 @@ export function Input({
     >
       {isCircleVisible && circlePosition === "left" && (
         <>
-          <div className='w-[19px] h-[.9375rem] border-2 border-[#DBDBDB] rounded-full flex items-center justify-center'>
+          <div
+            id='output-end'
+            className={`w-[1.1875rem] h-[.9375rem] border-2 border-[#DBDBDB] rounded-full flex items-center justify-center`}
+          >
             <div className='w-[.4375rem] h-[.4375rem] bg-[#0066FF4D] rounded-full z-10 '></div>
           </div>
 
@@ -72,7 +75,10 @@ export function Input({
             )}
           />
 
-          <div className='relative w-[1.125rem] h-[.9375rem] border-2 border-[#DBDBDB] rounded-full flex items-center justify-center'>
+          <div
+            id='input-start'
+            className='w-[1.125rem] h-[.9375rem] border-2 border-[#DBDBDB] rounded-full flex items-center justify-center'
+          >
             <div className='w-[.4375rem] h-[.4375rem] bg-[#0066FF4D] rounded-full z-10'></div>
           </div>
         </>
